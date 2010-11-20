@@ -8,7 +8,7 @@ DomainOperations::ResellerClubHTTP - A class to search and book a Domain Name vi
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
@@ -20,7 +20,7 @@ Version 0.01
 #This script is Prepared by ,
 #Abhsihek jain
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use base 'DomainOperations';
 
@@ -45,6 +45,16 @@ This module presents an easy to use Resellerclub's HTTP APIs on Perl.
 =head1 FUNCTIONS
 
 =head2 new
+
+=head2 createCustomer
+
+=head2 createContact
+
+=head2 checkDomainAWithoutSuggestion
+
+=head2 checkDomainAWithSuggestion
+
+=head2 registerDomain
 
 =cut
 
@@ -689,9 +699,9 @@ At the moment these methods are implemented:
 A constructor
 
 The parameters sent are :
-username  = resellerid of the reseller, can be viewed under the Settings > Personal Information from the web interface. 
-password  = password
-account   = whether this is 'Sandbox' or 'Production'
+username  :	resellerid of the reseller, can be viewed under the Settings , Personal Information from the web interface. 
+password  :	password
+account   :	whether this is 'Sandbox' or 'Production'
 
 returns an object
 
@@ -761,6 +771,29 @@ print Dumper $do->registerDomain({
 
 Returns an hashref, along with that the status of the domain registration.
 
+
+=item C<modifyContact>
+Not yet implemented, please dont use this function for now.
+
+=item C<checkDomainA>
+Not yet implemented, please dont use this function for now.
+
+=item C<formatdomains>
+Not yet implemented, please dont use this function for now.
+
+=item C<renewDomain>
+Not yet implemented, please dont use this function for now.
+
+=item C<transferDomain>
+Not yet implemented, please dont use this function for now.
+
+
+=item C<modifyCustomer>
+Not yet implemented, please dont use this function for now.
+
+
+=item C<modifyCustomerPassword>
+Not yet implemented, please dont use this function for now.
 
 =back
 

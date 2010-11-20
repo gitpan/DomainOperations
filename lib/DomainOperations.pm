@@ -5,15 +5,15 @@ use strict;
 use Carp;
 =head1 NAME
 
-DomainOperations - The base class :  DomainOperations
+DomainOperations - To perform search and registration of domain names via famous registrars
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
@@ -45,7 +45,8 @@ You can find documentation for this module with the perldoc command.
 
     perldoc DomainOperations
 
-
+=item C<new>
+Not yet implemented, please dont use this function for now.
 
 =head1 COPYRIGHT & LICENSE
 

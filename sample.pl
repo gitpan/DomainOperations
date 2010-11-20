@@ -10,28 +10,28 @@ my $do = DomainOperations::ResellerClubHTTP->new(
 );
 
 print Dumper $do->checkDomainAWithoutSuggestion(
-	{ 'domains' => [''], 'tlds' => [ '', '' ] } );
+	{ 'domains' => ['abcdefgh'], 'tlds' => [ 'com', 'net' ] } );
 
 print Dumper $do->createCustomer(
 	{
 		_add_default_contact => '1',
 		cemail               => '',
 		cpassword            => '',
-		cname                => '',
-		caddress1            => '',
-		caddress2            => '',
-		ccity                => '',
-		cstate               => '',
-		ccountry             => '',
+		cname                => ' ',
+		caddress1            => 'test add 1',
+		caddress2            => 'add 2',
+		ccity                => 'delhi',
+		cstate               => 'delhi',
+		ccountry             => 'IN',
 		czip                 => '',
-		ccountrycode         => '',
+		ccountrycode         => '91',
 		cphone               => '',
 	}
 );
 
 print Dumper $do->registerDomain(
 	{
-		domain      => '',
+		domain      => 'xyz.com',
 		years       => 4,
 		nameservers => [ '', '' ],
 		customer    => '',
